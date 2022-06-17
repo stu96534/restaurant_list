@@ -24,7 +24,13 @@ git clone https://github.com/stu96534/restaurant_list.git
 cd restaurant_list
 ```
 
-3.啟動程式:
+3.下載套件:
+
+```
+npm install
+```
+
+4.啟動程式:
 
 ```
 npm run dev
