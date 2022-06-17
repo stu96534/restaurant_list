@@ -9,5 +9,5 @@
 1.開啟終端機(Terminal)cd 到存放專案本機位置並執行:
 
 ```
-git clone https://github.com/Eason0in/Restaurant-CRUD.git
+git clone https://github.com/stu96534/restaurant_list.git
 ```
