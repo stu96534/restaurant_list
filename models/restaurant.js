@@ -13,7 +13,7 @@ const RestSchema = new Schema({
     type: String,
     required: true
   },
-  localtion: {
+  location: {
     type: String,
     required: true
   },
