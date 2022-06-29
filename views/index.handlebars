@@ -1,13 +1,13 @@
 {{!-- <div class="title py-5">
-  
+
 
 </div> --}}
 
 <!-- search bar -->
 <div class="container search-bar">
-<div class="text-center title">
-  <h1 class="mb-4">傑克餐廳瀏覽網</h1>
-</div>
+  <div class="text-center title">
+    <h1 class="mb-4">傑克餐廳瀏覽網</h1>
+  </div>
 
   <div class="search-bar-outer">
     <div class="search-bar-inner">
@@ -48,6 +48,12 @@
             </div>
           </div>
         </a>
+        <div class="d-flex justify-content-end mb-2">
+          <a href="./restaurants/{{this._id}}" class="btn btn-info mx-1">Edit</a>
+          <a href="./restaurants/{{this._id}}" class="btn btn-success mx-1">Detail</a>
+          <a href="./restaurants/{{this._id}}" class="btn btn-danger mx-1">Delete</a>
+        </div>
+
         {{/each}}
 
       </div>

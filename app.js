@@ -53,8 +53,11 @@ app.post('/restaurants', (req, res) => {
 
 //setting restaurants
 app.get('/restaurants/:restaurantId', (req, res) => {
-  const restaurant = restaurantList.results.find(element => element.id.toString() === req.params.restaurantId);
-  res.render('show', { restaurant: restaurant })
+  const restaurant = req.params.restaurantId
+  return Restaurant.findById(restaurant)
+    .lean()
+    .then((restaurant) => res.render('show', { restaurant }))
+    .catch(error => console.error(error))
 })
 
 //setting search
