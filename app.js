@@ -30,7 +30,7 @@ app.get('/', (req, res) => {
     .catch(error => console.error(error))
 })
 
-//create restaurant
+//setting create restaurant
 app.get('/restaurants/new', (req, res) => {
   return res.render('new')
 })
@@ -45,10 +45,44 @@ app.post('/restaurants', (req, res) => {
   const image = req.body.image
   const description = req.body.description
 
-
   return Restaurant.create({ name, category, location, google_map, rating, phone, image, description })
     .then(() => res.redirect('/'))
     .catch(error => console.log(error))
+})
+
+//setting edit restaurant
+app.get('/restaurants/:restaurantId/edit', (req, res) => {
+  const id = req.params.restaurantId
+  return Restaurant.findById(id)
+    .lean()
+    .then((restaurant) => res.render('edit', { restaurant }))
+    .catch(error => console.error(error))
+})
+
+app.post('/restaurants/:restaurantId/edit', (req, res) => {
+  const id = req.params.restaurantId
+  const name = req.body.name
+  const category = req.body.category
+  const location = req.body.location
+  const google_map = req.body.google_map
+  const rating = req.body.rating
+  const phone = req.body.phone
+  const image = req.body.image
+  const description = req.body.description
+  return Restaurant.findById(id)
+    .then(restaurant => {
+      restaurant.name = name
+      restaurant.category = category
+      restaurant.location = location
+      restaurant.google_map = google_map
+      restaurant.rating = rating
+      restaurant.phone = phone
+      restaurant.image = image
+      restaurant.description = description
+      return restaurant.save()
+    })
+    .then(() => res.redirect(`/restaurants/${id}`))
+    .catch(error => console.error(error))
 })
 
 //setting restaurants
