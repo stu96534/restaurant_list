@@ -25,6 +25,10 @@ const RestSchema = new Schema({
     type: String,
     required: true
   },
+  rating: {
+    type: String,
+    required: true
+  },
   description: {
     type: String,
     required: true
