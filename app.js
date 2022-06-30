@@ -36,14 +36,7 @@ app.get('/restaurants/new', (req, res) => {
 })
 
 app.post('/restaurants', (req, res) => {
-  const name = req.body.name
-  const category = req.body.category
-  const location = req.body.location
-  const google_map = req.body.google_map
-  const rating = req.body.rating
-  const phone = req.body.phone
-  const image = req.body.image
-  const description = req.body.description
+  const { name, category, location, google_map, rating, phone, image, description } = req.body
 
   return Restaurant.create({ name, category, location, google_map, rating, phone, image, description })
     .then(() => res.redirect('/'))
@@ -61,14 +54,7 @@ app.get('/restaurants/:restaurantId/edit', (req, res) => {
 
 app.post('/restaurants/:restaurantId/edit', (req, res) => {
   const id = req.params.restaurantId
-  const name = req.body.name
-  const category = req.body.category
-  const location = req.body.location
-  const google_map = req.body.google_map
-  const rating = req.body.rating
-  const phone = req.body.phone
-  const image = req.body.image
-  const description = req.body.description
+  const { name, category, location, google_map, rating, phone, image, description } = req.body
   return Restaurant.findById(id)
     .then(restaurant => {
       restaurant.name = name
