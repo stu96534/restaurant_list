@@ -41,3 +41,10 @@ npm run dev
  - Node.js 版本 16.15.0- 伺服器
  - express 版本 4.16.4- 開發框架
  - express-handlebars 版本 3.0.0 - 樣板引擎
+ 
+ ## 新增功能
+ ### 新增一家餐廳
+ ![新增](https://github.com/stu96534/restaurant_list/blob/main/public/新增.png)
+ ### 可按Detail及圖片，瀏覽餐廳詳細資訊
+ ### 可按Edit，修改餐廳詳細資訊
+ ### 可按Delete，刪除餐廳
