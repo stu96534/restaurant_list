@@ -7,9 +7,8 @@
 
 ## 專案畫面
 
-![首頁](https://github.com/stu96534/restaurant_list/blob/main/public/%E9%A6%96%E9%A0%81.png)
-![餐廳列表](https://github.com/stu96534/restaurant_list/blob/main/public/餐廳列表.png)
-![餐廳詳細資料](https://github.com/stu96534/restaurant_list/blob/main/public/餐廳詳細資料.png)
+![首頁](https://github.com/stu96534/restaurant_list/blob/main/public/餐廳首頁.png)
+![餐廳列表](https://github.com/stu96534/restaurant_list/blob/main/public/餐廳首頁2.png)
 
 ## 安裝
 1.開啟終端機(Terminal)cd 到存放專案本機位置並執行:
@@ -45,6 +44,12 @@ npm run dev
  ## 新增功能
  ### 新增一家餐廳
  ![新增](https://github.com/stu96534/restaurant_list/blob/main/public/新增.png)
+ ![新增](https://github.com/stu96534/restaurant_list/blob/main/public/新增2.png)
  ### 可按Detail及圖片，瀏覽餐廳詳細資訊
+ ![詳細資料](https://github.com/stu96534/restaurant_list/blob/main/public/詳細資料.png)
+ ![詳細資料](https://github.com/stu96534/restaurant_list/blob/main/public/詳細資料2.png)
  ### 可按Edit，修改餐廳詳細資訊
+ ![修改](https://github.com/stu96534/restaurant_list/blob/main/public/修改.png)
+ ![修改](https://github.com/stu96534/restaurant_list/blob/main/public/修改2.png)
  ### 可按Delete，刪除餐廳
+ ![刪除](https://github.com/stu96534/restaurant_list/blob/main/public/刪除.png)
