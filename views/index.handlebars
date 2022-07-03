@@ -13,16 +13,29 @@
     <div class="search-bar-inner">
       <form action="/search">
         <h4 class="mb-2">尋找餐廳：</h4>
-        <div class="input-group">
+        <div class="d-flex justify-content-start bd-highlight"></div>
+        <div class="input-group mb-2 mb-sm-0 mr-sm-2">
           <input type="text" name="keyword" class="form-control" placeholder="輸入餐廳、分類" aria-label="Restaurant Name..."
             value="{{keyword}}" aria-describedby="search-button">
           <div class="input-group-append">
             <button class="btn btn-major" type="submit" id="search-button"><i class="fas fa-search"></i></button>
           </div>
+
+          <div class="input-group">
+            <select class="form-control" id="sort" name="sort">
+              <option>A > Z</option>
+              <option>Z > A</option>
+              <option>類別</option>
+              <option>地區</option>
+            </select>
+          </div>
         </div>
       </form>
     </div>
   </div>
+</div>
+
+
 </div>
 
 <div class="container mt-5">
@@ -49,7 +62,7 @@
           <div class="d-flex justify-content-end card-footer">
             <a href="./restaurants/{{this._id}}/edit" class="btn btn-info mx-1">Edit</a>
             <a href="./restaurants/{{this._id}}" class="btn btn-success mx-1">Detail</a>
-            <form action="./restaurants/{{this._id}}/delete" method="POST">
+            <form action="./restaurants/{{this._id}}?_method=DELETE" method="POST">
               <button type="submit" class="btn btn-danger">Delete</button>
             </form>
           </div>
