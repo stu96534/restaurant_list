@@ -57,4 +57,4 @@ npm run dev
  ### 可按Delete，刪除餐廳
  ![刪除](https://github.com/stu96534/restaurant_list/blob/main/public/刪除.png)\
  ### 可按選單，選擇餐廳排列類別
- ![選單](https://github.com/stu96534/restaurant_list/blob/main/public/排列.png)
+ ![選單](https://github.com/stu96534/restaurant_list/blob/main/public/排序.png)
