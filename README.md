@@ -7,11 +7,11 @@
  - 可新增一家餐廳
  - 可修改餐廳詳細資訊
  - 可刪除餐廳
+ - 搜尋可依選單類別排序
 
 ## 專案畫面
 
-![首頁](https://github.com/stu96534/restaurant_list/blob/main/public/餐廳首頁.png)
-![餐廳列表](https://github.com/stu96534/restaurant_list/blob/main/public/餐廳首頁2.png)
+![首頁](https://github.com/stu96534/restaurant_list/blob/main/public/首頁.png)
 
 ## 安裝
 1.開啟終端機(Terminal)cd 到存放專案本機位置並執行:
@@ -55,4 +55,6 @@ npm run dev
  ![修改](https://github.com/stu96534/restaurant_list/blob/main/public/修改.png)
  ![修改](https://github.com/stu96534/restaurant_list/blob/main/public/修改2.png)
  ### 可按Delete，刪除餐廳
- ![刪除](https://github.com/stu96534/restaurant_list/blob/main/public/刪除.png)
+ ![刪除](https://github.com/stu96534/restaurant_list/blob/main/public/刪除.png)\
+ ### 可按選單，選擇餐廳排列類別
+ ![選單](https://github.com/stu96534/restaurant_list/blob/main/public/排列.png)
