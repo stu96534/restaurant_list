@@ -1,0 +1,42 @@
+<div class="row mt-5">
+  <div class="col-md-5 m-auto">
+    <div class="card card-body ">
+      <h1 class="text-center mt-3 mb-5">Register</h1>
+      <form action="/users/login" method="post">
+
+      <div class="mb-4 mx-auto row d-flex justify-content-center">
+        <label for="name" class="col-sm-4 col-form-label text-center">Name</label>
+        <div class="col-sm-7">
+          <input type="name" name="name" id="name" class="form-control" placeholder="Enter Name">
+        </div>
+      </div>
+
+        <div class="mb-4 mx-auto mt-2 row d-flex justify-content-center">
+          <label for="email" class="col-sm-4 col-form-label text-center">Email</label>
+          <div class="col-sm-7">
+            <input type="email" name="email" id="email" class="form-control " placeholder="Enter Email">
+          </div>
+        </div>
+
+        <div class="mb-4 mx-auto row d-flex justify-content-center">
+          <label for="password" class="col-sm-4 col-form-label text-center">Password</label>
+          <div class="col-sm-7">
+            <input type="password" name="password" id="password" class="form-control" placeholder="Enter Password">
+          </div>
+        </div>
+
+        <div class="mb-5 mx-auto row d-flex justify-content-center">
+          <label for="confirmpassword" class="col-sm-4 col-form-label text-center">Confirm Password</label>
+          <div class="col-sm-7">
+            <input type="confirmpassword" name="confirmpassword" id="confirmpassword" class="form-control" placeholder="Confirm Password">
+          </div>
+        </div>
+
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <button class="btn btn-primary mb-2" type="summit">Register</button>
+        </div>
+      </form>
+      <p class="lead mt-4 ms-4">Have an Account? <a href="/users/login">Login</a></p>
+    </div>
+  </div>
+</div>
