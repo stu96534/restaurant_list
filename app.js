@@ -21,7 +21,7 @@ app.set('view engine', 'handlebars')
 app.use(session({
   secret: 'ThisIsMySecret',
   resave: false,
-  saveUninitialzed: true
+  saveUninitialized: true
 }))
 app.use(express.static('public'))
 app.use(bodyParser.urlencoded({ extended: true }))

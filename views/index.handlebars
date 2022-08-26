@@ -6,7 +6,7 @@
 <!-- search bar -->
 <div class="container search-bar">
   <div class="text-center title">
-    <h1 class="mb-4">傑克餐廳瀏覽網</h1>
+    <h1 class="mb-4">{{#if isAuthenticated}}{{ user.name }}{{/if}}餐廳瀏覽網</h1>
   </div>
 
   <div class="search-bar-outer">

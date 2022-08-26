@@ -7,13 +7,15 @@ const restaurantList = require('../../models/seeds/restaurant.json')
 
 
 router.get('/', (req, res) => {
-  Restaurant.find()
+  const userId = req.user._id
+  Restaurant.find({ userId })
     .lean()
     .then(restaurantList => res.render('index', { restaurantList }))
     .catch(error => console.error(error))
 })
 
 router.get('/search', (req, res) => {
+  const userId = req.user._id
   const keyword = req.query.keyword
   const sort = req.query.sort
   let name = false
@@ -21,7 +23,7 @@ router.get('/search', (req, res) => {
   let local = false
   let cate = false
 
-  Restaurant.find({})
+  Restaurant.find({ userId })
     .lean()
     .sort(sort)
     .then(restaurantList => {
