@@ -1,13 +1,16 @@
 # 餐廳清單
-此專案提供查詢、瀏覽餐廳資訊
+此專案需註冊登入後，提供查詢、瀏覽餐廳資訊
 
 ## 功能介紹
+ - 有註冊、登入頁面，需登入才可使用功能
+ - 可用FACEBOOK登入
  - 依照餐廳名稱及類別搜尋
  - 可瀏覽每間餐廳類別、地址、電話、評分、圖片及 Google Map相關資訊
  - 可新增一家餐廳
  - 可修改餐廳詳細資訊
  - 可刪除餐廳
  - 搜尋可依選單類別排序
+ - 可按登出鍵登出
 
 ## 專案畫面
 
@@ -32,7 +35,13 @@ cd restaurant_list
 npm install
 ```
 
-4.啟動程式:
+4.下載種子資料:
+
+```
+npm run seed
+```
+
+5.啟動程式:
 
 ```
 npm run dev
@@ -43,8 +52,25 @@ npm run dev
  - Node.js 版本 16.15.0- 伺服器
  - express 版本 4.16.4- 開發框架
  - express-handlebars 版本 3.0.0 - 樣板引擎
+ - express-session 版本 1.17.1- 驗證機制
+ - mongoose 版本 5.9.7 -資料庫
+ - passport 版本 0.4.1 - 使用者認證
+ - passport-local 版本 1.0.0 - 本地策略
+ - passport-facebook 版本 3.0.0 - FACEBOOK策略
+ - bcrypt 版本 2.4.3 - 雜湊演算法
+ - connect-flash 版本 0.0.1 - 使用者提示
+ - dotenv 版本 8.2.0 - 
  
  ## 新增功能
+ ### 註冊(可使用facebook註冊)
+ ![新增](https://github.com/stu96534/restaurant_list/blob/main/public/新增.png)
+ ![新增](https://github.com/stu96534/restaurant_list/blob/main/public/新增2.png)
+ ### 登入(可使用facebook登入)
+ ![新增](https://github.com/stu96534/restaurant_list/blob/main/public/新增.png)
+ ![新增](https://github.com/stu96534/restaurant_list/blob/main/public/新增2.png)
+ ### 登出
+ ![新增](https://github.com/stu96534/restaurant_list/blob/main/public/新增.png)
+ ![新增](https://github.com/stu96534/restaurant_list/blob/main/public/新增2.png)
  ### 新增一家餐廳
  ![新增](https://github.com/stu96534/restaurant_list/blob/main/public/新增.png)
  ![新增](https://github.com/stu96534/restaurant_list/blob/main/public/新增2.png)
