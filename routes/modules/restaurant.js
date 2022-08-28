@@ -3,7 +3,7 @@ const router = express.Router()
 
 const Restaurant = require('../../models/restaurants')
 
-//setting create restaurant
+// setting create restaurant
 router.get('/new', (req, res) => {
   return res.render('new')
 })
@@ -17,7 +17,7 @@ router.post('/', (req, res) => {
     .catch(error => console.log(error))
 })
 
-//setting edit restaurant
+// setting edit restaurant
 router.get('/:restaurantId/edit', (req, res) => {
   const userId = req.user._id
   const _id = req.params.restaurantId
@@ -47,25 +47,24 @@ router.put('/:restaurantId', (req, res) => {
     .catch(error => console.error(error))
 })
 
-//setting remove restaurant
+// setting remove restaurant
 router.delete('/:restaurantId', (req, res) => {
   const userId = req.user._id
   const _id = req.params.restaurantId
   return Restaurant.findOne({ _id, userId })
     .then(restaurant => restaurant.remove())
-    .then(() => res.redirect(`/`))
+    .then(() => res.redirect('/'))
     .catch(error => console.error(error))
 })
 
-//setting restaurants
+// setting restaurants
 router.get('/:restaurantId', (req, res) => {
   const userId = req.user._id
   const _id = req.params.restaurantId
-  return Restaurant.findOne({ _id, userId})
+  return Restaurant.findOne({ _id, userId })
     .lean()
     .then((restaurant) => res.render('show', { restaurant }))
     .catch(error => console.error(error))
 })
-
 
 module.exports = router

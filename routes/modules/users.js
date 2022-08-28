@@ -23,12 +23,12 @@ router.post('/register', (req, res) => {
   const { name, email, password, confirmpassword } = req.body
   const errors = []
 
-  if ( !email) {
-    errors.push({ message: 'Email 欄位是必填的！'})
-  } 
+  if (!email) {
+    errors.push({ message: 'Email 欄位是必填的！' })
+  }
   if (!password) {
     errors.push({ message: 'Password 欄位是必填的！' })
-  } 
+  }
   if (!confirmpassword) {
     errors.push({ message: 'Confirm Password 欄位是必填的！' })
   }
@@ -60,7 +60,7 @@ router.post('/register', (req, res) => {
         })
       } else {
         return bcrypt.genSalt(10)
-        .then(salt => bcrypt.hash(password, salt))
+          .then(salt => bcrypt.hash(password, salt))
           .then(hash => User.create({
             name,
             email,
@@ -69,14 +69,12 @@ router.post('/register', (req, res) => {
           .then(() => res.redirect('/'))
           .catch(err => console.log(err))
       }
-
-
     })
 })
 
 router.get('/logout', (req, res) => {
   req.logout()
-  req.flash('success_msg', "你已經成功登出。")
+  req.flash('success_msg', '你已經成功登出。')
   res.redirect('/users/login')
 })
 

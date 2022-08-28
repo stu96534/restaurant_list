@@ -1,10 +1,7 @@
 const express = require('express')
 const router = express.Router()
-const exphbs = require('express-handlebars')
 
 const Restaurant = require('../../models/restaurants')
-const restaurantList = require('../../models/seeds/restaurant.json')
-
 
 router.get('/', (req, res) => {
   const userId = req.user._id
@@ -43,9 +40,6 @@ router.get('/search', (req, res) => {
       res.render('index', { restaurantList: restaurants, keyword, name, name2, local, cate })
     })
     .catch(error => console.error(error))
-  
 })
-
-
 
 module.exports = router
