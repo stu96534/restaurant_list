@@ -63,19 +63,16 @@ npm run dev
  
  ## 新增功能
  ### 註冊(可使用facebook註冊)
- ![新增](https://github.com/stu96534/restaurant_list/blob/main/public/新增.png)
- ![新增](https://github.com/stu96534/restaurant_list/blob/main/public/新增2.png)
+ ![註冊](https://github.com/stu96534/restaurant_list/blob/main/public/註冊.png)
  ### 登入(可使用facebook登入)
- ![新增](https://github.com/stu96534/restaurant_list/blob/main/public/新增.png)
- ![新增](https://github.com/stu96534/restaurant_list/blob/main/public/新增2.png)
+ ![登入](https://github.com/stu96534/restaurant_list/blob/main/public/登入.png)
  ### 登出
- ![新增](https://github.com/stu96534/restaurant_list/blob/main/public/新增.png)
- ![新增](https://github.com/stu96534/restaurant_list/blob/main/public/新增2.png)
+ ![登出](https://github.com/stu96534/restaurant_list/blob/main/public/登出.png)
  ### 新增一家餐廳
  ![新增](https://github.com/stu96534/restaurant_list/blob/main/public/新增.png)
  ![新增](https://github.com/stu96534/restaurant_list/blob/main/public/新增2.png)
  ### 可按Detail及圖片，瀏覽餐廳詳細資訊
- ![詳細資料](https://github.com/stu96534/restaurant_list/blob/main/public/詳細資料.png)
+ ![詳細資料](https://github.com/stu96534/restaurant_list/blob/main/public/餐廳詳細資料.png)
  ![詳細資料](https://github.com/stu96534/restaurant_list/blob/main/public/詳細資料2.png)
  ### 可按Edit，修改餐廳詳細資訊
  ![修改](https://github.com/stu96534/restaurant_list/blob/main/public/修改.png)
